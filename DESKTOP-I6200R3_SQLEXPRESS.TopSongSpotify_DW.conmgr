@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-I6200R3_SQLEXPRESS.TopSongSpotify_DW"
+  DTS:DTSID="{F6868F02-BAE2-4261-8C4B-1DDDFE424CAC}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-I6200R3\SQLEXPRESS;Initial Catalog=TopSongSpotify_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-QuaTrinhETLOlap-{F6868F02-BAE2-4261-8C4B-1DDDFE424CAC}DESKTOP-I6200R3\SQLEXPRESS.TopSongSpotify_DW;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

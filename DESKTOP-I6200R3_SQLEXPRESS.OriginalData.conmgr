@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-I6200R3_SQLEXPRESS.OriginalData"
+  DTS:DTSID="{74A5EBED-70A9-41EE-B31B-EFA505FC944E}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-I6200R3\SQLEXPRESS;Initial Catalog=OriginalData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-QuaTrinhETLOlap-{74A5EBED-70A9-41EE-B31B-EFA505FC944E}DESKTOP-I6200R3\SQLEXPRESS.OriginalData;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
