@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="172"
-  DTS:VersionGUID="{8AB4F100-63D6-4DDA-9339-546D8A17389C}">
+  DTS:VersionBuild="209"
+  DTS:VersionGUID="{43F2584B-B3DD-435E-8ABB-B279C6F73BC9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -11475,6 +11475,13 @@ where [refTable].[countryCode] = ?</property>
                           cachedLength="500"
                           cachedName="album_name"
                           lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Source.Outputs[OLE DB Source Output].Columns[album_name]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Inputs[Aggregate Input 1].Columns[is_explicit]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="is_explicit"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Source.Outputs[OLE DB Source Output].Columns[is_explicit]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -11579,12 +11586,12 @@ where [refTable].[countryCode] = ?</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[tempo]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Tempo]"
                           codePage="1258"
                           dataType="str"
                           length="50"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[tempo]"
-                          name="tempo">
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Tempo]"
+                          name="Tempo">
                           <properties>
                             <property
                               containsID="true"
@@ -11607,12 +11614,12 @@ where [refTable].[countryCode] = ?</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[valence]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Valence]"
                           codePage="1258"
                           dataType="str"
                           length="50"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[valence]"
-                          name="valence">
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Valence]"
+                          name="Valence">
                           <properties>
                             <property
                               containsID="true"
@@ -11635,12 +11642,12 @@ where [refTable].[countryCode] = ?</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[acousticness]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Acousticness]"
                           codePage="1258"
                           dataType="str"
                           length="50"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[acousticness]"
-                          name="acousticness">
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Acousticness]"
+                          name="Acousticness">
                           <properties>
                             <property
                               containsID="true"
@@ -11663,12 +11670,12 @@ where [refTable].[countryCode] = ?</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[danceability]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Danceability]"
                           codePage="1258"
                           dataType="str"
                           length="50"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[danceability]"
-                          name="danceability">
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Danceability]"
+                          name="Danceability">
                           <properties>
                             <property
                               containsID="true"
@@ -11691,17 +11698,45 @@ where [refTable].[countryCode] = ?</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[album_name]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Album_name]"
                           dataType="wstr"
                           length="500"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[album_name]"
-                          name="album_name">
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Album_name]"
+                          name="Album_name">
                           <properties>
                             <property
                               containsID="true"
                               dataType="System.Int32"
                               description="Specifies the ID of the input column used in the aggregation."
                               name="AggregationColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Source.Outputs[OLE DB Source Output].Columns[album_name]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the type of aggregation."
+                              name="AggregationType"
+                              typeConverter="AggregationType">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                              name="IsBig">1</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the string comparison options."
+                              name="AggregationComparisonFlags">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Is_Explicit]"
+                          codePage="1258"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Is_Explicit]"
+                          name="Is_Explicit">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the ID of the input column used in the aggregation."
+                              name="AggregationColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Source.Outputs[OLE DB Source Output].Columns[is_explicit]}</property>
                             <property
                               dataType="System.Int32"
                               description="Specifies the type of aggregation."
@@ -11779,7 +11814,7 @@ where [refTable].[Album_Name] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[album_name]};</property>
+                      name="ParameterMap">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Album_name]};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -11803,12 +11838,11 @@ where [refTable].[Album_Name] = ?</property>
                       name="Lookup Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\album.Inputs[Lookup Input].Columns[album_name]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\album.Inputs[Lookup Input].Columns[Album_name]"
                           cachedDataType="wstr"
                           cachedLength="500"
-                          cachedName="album_name"
-                          cachedSortKeyPosition="8"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[album_name]">
+                          cachedName="Album_name"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Album_name]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -11882,11 +11916,468 @@ where [refTable].[Album_Name] = ?</property>
                   </outputs>
                 </component>
                 <component
+                  refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Data Conversion"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Inputs[Data Conversion Input].Columns[Tempo]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Tempo"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Tempo]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Inputs[Data Conversion Input].Columns[Duration]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Duration"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Duration]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Inputs[Data Conversion Input].Columns[Valence]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Valence"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Valence]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Inputs[Data Conversion Input].Columns[Acousticness]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Acousticness"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Acousticness]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Inputs[Data Conversion Input].Columns[Danceability]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Danceability"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Danceability]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Inputs[Data Conversion Input].Columns[Is_Explicit]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Is_Explicit"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Is_Explicit]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Tempo]"
+                          dataType="r4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Tempo]"
+                          name="Copy of Tempo"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Tempo]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Valence]"
+                          dataType="r4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Valence]"
+                          name="Copy of Valence"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Valence]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Duration]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Duration]"
+                          name="Copy of Duration"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Duration]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Acousticness]"
+                          dataType="r4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Acousticness]"
+                          name="Copy of Acousticness"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Acousticness]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Danceability]"
+                          dataType="r4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Danceability]"
+                          name="Copy of Danceability"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Danceability]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Is_Explicit]"
+                          dataType="bool"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Is_Explicit]"
+                          name="Copy of Is_Explicit"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Is_Explicit]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
                   refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
                   name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[SONGCONVERTERROR]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{74A5EBED-70A9-41EE-B31B-EFA505FC944E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-I6200R3_SQLEXPRESS.OriginalData]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Song_ID]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Song_ID"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Song_ID]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Song_ID]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Song_Name]"
+                          cachedDataType="wstr"
+                          cachedLength="500"
+                          cachedName="Song_Name"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Song_Name]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Song_Name]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Duration]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Duration"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Duration]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Tempo]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Tempo"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tempo]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Tempo]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Valence]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Valence"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Valence]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Valence]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Acousticness]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Acousticness"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Acousticness]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Acousticness]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Danceability]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Danceability"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Danceability]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Danceability]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Album_name]"
+                          cachedDataType="wstr"
+                          cachedLength="500"
+                          cachedName="Album_name"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Album_name]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Album_name]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Is_Explicit]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Is_Explicit"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Is_Explicit]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Is_Explicit]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ErrorCode]"
+                          cachedDataType="i4"
+                          cachedName="ErrorCode"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ErrorCode]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ErrorColumn]"
+                          cachedDataType="i4"
+                          cachedName="ErrorColumn"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ErrorColumn]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Song_ID]"
+                          codePage="1258"
+                          dataType="str"
+                          length="50"
+                          name="Song_ID" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Song_Name]"
+                          dataType="wstr"
+                          length="500"
+                          name="Song_Name" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
+                          codePage="1258"
+                          dataType="str"
+                          length="50"
+                          name="Duration" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tempo]"
+                          codePage="1258"
+                          dataType="str"
+                          length="50"
+                          name="Tempo" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Valence]"
+                          codePage="1258"
+                          dataType="str"
+                          length="50"
+                          name="Valence" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Acousticness]"
+                          codePage="1258"
+                          dataType="str"
+                          length="50"
+                          name="Acousticness" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Danceability]"
+                          codePage="1258"
+                          dataType="str"
+                          length="50"
+                          name="Danceability" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Album_name]"
+                          dataType="wstr"
+                          length="500"
+                          name="Album_name" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Is_Explicit]"
+                          codePage="1258"
+                          dataType="str"
+                          length="50"
+                          name="Is_Explicit" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ErrorCode]"
+                          dataType="i4"
+                          name="ErrorCode" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ErrorColumn]"
+                          dataType="i4"
+                          name="ErrorColumn" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination 1"
                   usesDispositions="true"
                   version="4">
                   <properties>
@@ -11927,7 +12418,7 @@ where [refTable].[Album_Name] = ?</property>
                     <property
                       dataType="System.Boolean"
                       description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepNulls">true</property>
+                      name="FastLoadKeepNulls">false</property>
                     <property
                       dataType="System.String"
                       description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
@@ -11939,7 +12430,7 @@ where [refTable].[Album_Name] = ?</property>
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Connections[OleDbConnection]"
+                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Connections[OleDbConnection]"
                       connectionManagerID="{F6868F02-BAE2-4261-8C4B-1DDDFE424CAC}:external"
                       connectionManagerRefId="Project.ConnectionManagers[DESKTOP-I6200R3_SQLEXPRESS.TopSongSpotify_DW]"
                       description="The OLE DB runtime connection used to access the database."
@@ -11947,126 +12438,114 @@ where [refTable].[Album_Name] = ?</property>
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Song_ID]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Song_ID]"
                           cachedCodepage="1258"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Song_ID"
                           cachedSortKeyPosition="1"
-                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Song_ID]"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Song_ID]"
                           lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Song_ID]" />
                         <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Song_Name]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Song_Name]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Song_Name"
-                          cachedSortKeyPosition="2"
-                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Song_Name]"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Song_Name]"
                           lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Song_Name]" />
                         <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Duration]"
-                          cachedCodepage="1258"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Duration"
-                          cachedSortKeyPosition="3"
-                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Duration]" />
-                        <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[tempo]"
-                          cachedCodepage="1258"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="tempo"
-                          cachedSortKeyPosition="4"
-                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[tempo]"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[tempo]" />
-                        <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[valence]"
-                          cachedCodepage="1258"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="valence"
-                          cachedSortKeyPosition="5"
-                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[valence]"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[valence]" />
-                        <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[acousticness]"
-                          cachedCodepage="1258"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="acousticness"
-                          cachedSortKeyPosition="6"
-                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[acousticness]"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[acousticness]" />
-                        <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[danceability]"
-                          cachedCodepage="1258"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="danceability"
-                          cachedSortKeyPosition="7"
-                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[danceability]"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[danceability]" />
-                        <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Album_ID]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Album_ID]"
                           cachedDataType="i4"
                           cachedName="Album_ID"
-                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Album_ID]"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Album_ID]"
                           lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\album.Outputs[Lookup Match Output].Columns[Album_ID]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of Tempo]"
+                          cachedDataType="r4"
+                          cachedName="Copy of Tempo"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Tempo]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Tempo]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of Valence]"
+                          cachedDataType="r4"
+                          cachedName="Copy of Valence"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Valence]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Valence]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of Duration]"
+                          cachedDataType="i4"
+                          cachedName="Copy of Duration"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Duration]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of Acousticness]"
+                          cachedDataType="r4"
+                          cachedName="Copy of Acousticness"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Acousticness]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Acousticness]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of Danceability]"
+                          cachedDataType="r4"
+                          cachedName="Copy of Danceability"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Danceability]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Danceability]" />
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of Is_Explicit]"
+                          cachedDataType="bool"
+                          cachedName="Copy of Is_Explicit"
+                          externalMetadataColumnId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Is_Explicit]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Is_Explicit]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Song_ID]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Song_ID]"
                           codePage="1258"
                           dataType="str"
                           length="50"
                           name="Song_ID" />
                         <externalMetadataColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Song_Name]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Song_Name]"
                           dataType="wstr"
                           length="500"
                           name="Song_Name" />
                         <externalMetadataColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
-                          codePage="1258"
-                          dataType="str"
-                          length="50"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Tempo]"
+                          dataType="numeric"
+                          name="Tempo"
+                          precision="28" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Valence]"
+                          dataType="numeric"
+                          name="Valence"
+                          precision="28" />
+                        <externalMetadataColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
+                          dataType="i4"
                           name="Duration" />
                         <externalMetadataColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[tempo]"
-                          codePage="1258"
-                          dataType="str"
-                          length="50"
-                          name="tempo" />
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Acousticness]"
+                          dataType="numeric"
+                          name="Acousticness"
+                          precision="28" />
                         <externalMetadataColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[valence]"
-                          codePage="1258"
-                          dataType="str"
-                          length="50"
-                          name="valence" />
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Danceability]"
+                          dataType="numeric"
+                          name="Danceability"
+                          precision="28" />
                         <externalMetadataColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[acousticness]"
-                          codePage="1258"
-                          dataType="str"
-                          length="50"
-                          name="acousticness" />
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Is_Explicit]"
+                          dataType="bool"
+                          name="Is_Explicit" />
                         <externalMetadataColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[danceability]"
-                          codePage="1258"
-                          dataType="str"
-                          length="50"
-                          name="danceability" />
-                        <externalMetadataColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Album_ID]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Album_ID]"
                           dataType="i4"
                           name="Album_ID" />
                       </externalMetadataColumns>
@@ -12074,22 +12553,22 @@ where [refTable].[Album_Name] = ?</property>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      synchronousInputId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -12787,7 +13266,7 @@ where [refTable].[Album_Name] = ?</property>
                     <property
                       dataType="System.Boolean"
                       description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                      name="EliminateDuplicates">false</property>
+                      name="EliminateDuplicates">true</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the maximum number of threads to use for sorting."
@@ -12831,7 +13310,7 @@ where [refTable].[Album_Name] = ?</property>
                             <property
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">2</property>
+                              name="NewSortKeyPosition">0</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
@@ -12849,16 +13328,16 @@ where [refTable].[Album_Name] = ?</property>
                             <property
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">3</property>
+                              name="NewSortKeyPosition">0</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[tempo]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Tempo]"
                           cachedCodepage="1258"
                           cachedDataType="str"
                           cachedLength="50"
-                          cachedName="tempo"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[tempo]">
+                          cachedName="Tempo"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Tempo]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -12867,16 +13346,16 @@ where [refTable].[Album_Name] = ?</property>
                             <property
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">4</property>
+                              name="NewSortKeyPosition">0</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[valence]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Valence]"
                           cachedCodepage="1258"
                           cachedDataType="str"
                           cachedLength="50"
-                          cachedName="valence"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[valence]">
+                          cachedName="Valence"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Valence]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -12885,16 +13364,16 @@ where [refTable].[Album_Name] = ?</property>
                             <property
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">5</property>
+                              name="NewSortKeyPosition">0</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[acousticness]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Acousticness]"
                           cachedCodepage="1258"
                           cachedDataType="str"
                           cachedLength="50"
-                          cachedName="acousticness"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[acousticness]">
+                          cachedName="Acousticness"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Acousticness]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -12903,16 +13382,16 @@ where [refTable].[Album_Name] = ?</property>
                             <property
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">6</property>
+                              name="NewSortKeyPosition">0</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[danceability]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Danceability]"
                           cachedCodepage="1258"
                           cachedDataType="str"
                           cachedLength="50"
-                          cachedName="danceability"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[danceability]">
+                          cachedName="Danceability"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Danceability]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -12921,15 +13400,15 @@ where [refTable].[Album_Name] = ?</property>
                             <property
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">7</property>
+                              name="NewSortKeyPosition">0</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[album_name]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Album_name]"
                           cachedDataType="wstr"
                           cachedLength="500"
-                          cachedName="album_name"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[album_name]">
+                          cachedName="Album_name"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Album_name]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -12938,7 +13417,121 @@ where [refTable].[Album_Name] = ?</property>
                             <property
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">8</property>
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Is_Explicit]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Is_Explicit"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Is_Explicit]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Copy of Tempo]"
+                          cachedDataType="r4"
+                          cachedName="Copy of Tempo"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Tempo]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Copy of Valence]"
+                          cachedDataType="r4"
+                          cachedName="Copy of Valence"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Valence]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Copy of Duration]"
+                          cachedDataType="i4"
+                          cachedName="Copy of Duration"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Duration]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Copy of Acousticness]"
+                          cachedDataType="r4"
+                          cachedName="Copy of Acousticness"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Acousticness]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Copy of Danceability]"
+                          cachedDataType="r4"
+                          cachedName="Copy of Danceability"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Danceability]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input].Columns[Copy of Is_Explicit]"
+                          cachedDataType="bool"
+                          cachedName="Copy of Is_Explicit"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Is_Explicit]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
                           </properties>
                         </inputColumn>
                       </inputColumns>
@@ -12972,8 +13565,7 @@ where [refTable].[Album_Name] = ?</property>
                           dataType="wstr"
                           length="500"
                           lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Song_Name]"
-                          name="Song_Name"
-                          sortKeyPosition="2">
+                          name="Song_Name">
                           <properties>
                             <property
                               containsID="true"
@@ -12988,8 +13580,7 @@ where [refTable].[Album_Name] = ?</property>
                           dataType="str"
                           length="50"
                           lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Duration]"
-                          name="Duration"
-                          sortKeyPosition="3">
+                          name="Duration">
                           <properties>
                             <property
                               containsID="true"
@@ -12999,82 +13590,170 @@ where [refTable].[Album_Name] = ?</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[tempo]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Tempo]"
                           codePage="1258"
                           dataType="str"
                           length="50"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[tempo]"
-                          name="tempo"
-                          sortKeyPosition="4">
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Tempo]"
+                          name="Tempo">
                           <properties>
                             <property
                               containsID="true"
                               dataType="System.Int32"
                               description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[tempo]}</property>
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Tempo]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[valence]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Valence]"
                           codePage="1258"
                           dataType="str"
                           length="50"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[valence]"
-                          name="valence"
-                          sortKeyPosition="5">
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Valence]"
+                          name="Valence">
                           <properties>
                             <property
                               containsID="true"
                               dataType="System.Int32"
                               description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[valence]}</property>
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Valence]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[acousticness]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Acousticness]"
                           codePage="1258"
                           dataType="str"
                           length="50"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[acousticness]"
-                          name="acousticness"
-                          sortKeyPosition="6">
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Acousticness]"
+                          name="Acousticness">
                           <properties>
                             <property
                               containsID="true"
                               dataType="System.Int32"
                               description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[acousticness]}</property>
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Acousticness]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[danceability]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Danceability]"
                           codePage="1258"
                           dataType="str"
                           length="50"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[danceability]"
-                          name="danceability"
-                          sortKeyPosition="7">
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Danceability]"
+                          name="Danceability">
                           <properties>
                             <property
                               containsID="true"
                               dataType="System.Int32"
                               description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[danceability]}</property>
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Danceability]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[album_name]"
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Album_name]"
                           dataType="wstr"
                           length="500"
-                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[album_name]"
-                          name="album_name"
-                          sortKeyPosition="8">
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Album_name]"
+                          name="Album_name">
                           <properties>
                             <property
                               containsID="true"
                               dataType="System.Int32"
                               description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[album_name]}</property>
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Album_name]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Is_Explicit]"
+                          codePage="1258"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Is_Explicit]"
+                          name="Is_Explicit">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1].Columns[Is_Explicit]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Tempo]"
+                          dataType="r4"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Tempo]"
+                          name="Copy of Tempo">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Tempo]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Valence]"
+                          dataType="r4"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Valence]"
+                          name="Copy of Valence">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Valence]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Duration]"
+                          dataType="i4"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Duration]"
+                          name="Copy of Duration">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Duration]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Acousticness]"
+                          dataType="r4"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Acousticness]"
+                          name="Copy of Acousticness">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Acousticness]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Danceability]"
+                          dataType="r4"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Danceability]"
+                          name="Copy of Danceability">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Danceability]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Is_Explicit]"
+                          dataType="bool"
+                          lineageId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Outputs[Sort Output].Columns[Copy of Is_Explicit]"
+                          name="Copy of Is_Explicit">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Is_Explicit]}</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -13086,12 +13765,22 @@ where [refTable].[Album_Name] = ?</property>
               <paths>
                 <path
                   refId="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Aggregate Output 1]"
-                  endId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input]"
+                  endId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Inputs[Data Conversion Input]"
                   name="Aggregate Output 1"
                   startId="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate.Outputs[Aggregate Output 1]" />
                 <path
-                  refId="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Lookup Match Output]"
+                  refId="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Data Conversion Error Output]"
                   endId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Data Conversion Error Output"
+                  startId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Error Output]" />
+                <path
+                  refId="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Data Conversion Output]"
+                  endId="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort.Inputs[Sort Input]"
+                  name="Data Conversion Output"
+                  startId="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion.Outputs[Data Conversion Output]" />
+                <path
+                  refId="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Lookup Match Output]"
+                  endId="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
                   name="Lookup Match Output"
                   startId="Package\Quá trình tạo bảng Dimension\Dim_Song\album.Outputs[Lookup Match Output]" />
                 <path
@@ -13269,12 +13958,12 @@ where [refTable].[Album_Name] = ?</property>
                       </properties>
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Song_ID]"
+                          refId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[spotify_id]"
                           codePage="1258"
                           dataType="str"
                           length="50"
-                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Song_ID]"
-                          name="Song_ID">
+                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[spotify_id]"
+                          name="spotify_id">
                           <properties>
                             <property
                               containsID="true"
@@ -13498,7 +14187,7 @@ where [refTable].[countryCode] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Tao bang Fact\Bang Fact\294:invalid};</property>
+                      name="ParameterMap">#{Package\Tao bang Fact\Bang Fact\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Daily_Rank]};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -13604,6 +14293,27 @@ where [refTable].[countryCode] = ?</property>
                           cachedLength="50"
                           cachedName="Snapshot_Date_ID"
                           lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Snapshot_Date_ID]" />
+                        <inputColumn
+                          refId="Package\Tao bang Fact\Bang Fact\Data Conversion.Inputs[Data Conversion Input].Columns[Daily_Rank]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Daily_Rank"
+                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Daily_Rank]" />
+                        <inputColumn
+                          refId="Package\Tao bang Fact\Bang Fact\Data Conversion.Inputs[Data Conversion Input].Columns[Daily_Movement]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Daily_Movement"
+                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Daily_Movement]" />
+                        <inputColumn
+                          refId="Package\Tao bang Fact\Bang Fact\Data Conversion.Inputs[Data Conversion Input].Columns[Weekly_Movement]"
+                          cachedCodepage="1258"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Weekly_Movement"
+                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Weekly_Movement]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -13629,6 +14339,66 @@ where [refTable].[countryCode] = ?</property>
                               dataType="System.Int32"
                               description="Specifies the input column used as the source of data for the conversion."
                               name="SourceInputColumnLineageID">#{Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Snapshot_Date_ID]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Tao bang Fact\Bang Fact\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Daily_Rank]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          lineageId="Package\Tao bang Fact\Bang Fact\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Daily_Rank]"
+                          name="Copy of Daily_Rank"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Daily_Rank]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Tao bang Fact\Bang Fact\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Daily_Movement]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          lineageId="Package\Tao bang Fact\Bang Fact\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Daily_Movement]"
+                          name="Copy of Daily_Movement"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Daily_Movement]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Tao bang Fact\Bang Fact\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Weekly_Movement]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          lineageId="Package\Tao bang Fact\Bang Fact\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Weekly_Movement]"
+                          name="Copy of Weekly_Movement"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Weekly_Movement]}</property>
                             <property
                               dataType="System.Boolean"
                               description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -13735,37 +14505,13 @@ where [refTable].[countryCode] = ?</property>
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Song_ID]"
+                          refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[spotify_id]"
                           cachedCodepage="1258"
                           cachedDataType="str"
                           cachedLength="50"
-                          cachedName="Song_ID"
+                          cachedName="spotify_id"
                           externalMetadataColumnId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Song_ID]"
-                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Song_ID]" />
-                        <inputColumn
-                          refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Daily_Rank]"
-                          cachedCodepage="1258"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Daily_Rank"
-                          externalMetadataColumnId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Daily_Rank]"
-                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Daily_Rank]" />
-                        <inputColumn
-                          refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Daily_Movement]"
-                          cachedCodepage="1258"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Daily_Movement"
-                          externalMetadataColumnId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Daily_Movement]"
-                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Daily_Movement]" />
-                        <inputColumn
-                          refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Weekly_Movement]"
-                          cachedCodepage="1258"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Weekly_Movement"
-                          externalMetadataColumnId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Weekly_Movement]"
-                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Weekly_Movement]" />
+                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[spotify_id]" />
                         <inputColumn
                           refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Snapshot_Date_ID]"
                           cachedDataType="dbTimeStamp"
@@ -13780,6 +14526,24 @@ where [refTable].[countryCode] = ?</property>
                           cachedName="countryCode"
                           externalMetadataColumnId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CountryCode]"
                           lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[countryCode]" />
+                        <inputColumn
+                          refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Daily_Rank]"
+                          cachedDataType="i4"
+                          cachedName="Copy of Daily_Rank"
+                          externalMetadataColumnId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Daily_Rank]"
+                          lineageId="Package\Tao bang Fact\Bang Fact\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Daily_Rank]" />
+                        <inputColumn
+                          refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Daily_Movement]"
+                          cachedDataType="i4"
+                          cachedName="Copy of Daily_Movement"
+                          externalMetadataColumnId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Daily_Movement]"
+                          lineageId="Package\Tao bang Fact\Bang Fact\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Daily_Movement]" />
+                        <inputColumn
+                          refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Weekly_Movement]"
+                          cachedDataType="i4"
+                          cachedName="Copy of Weekly_Movement"
+                          externalMetadataColumnId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Weekly_Movement]"
+                          lineageId="Package\Tao bang Fact\Bang Fact\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Weekly_Movement]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -13791,21 +14555,15 @@ where [refTable].[countryCode] = ?</property>
                           name="Song_ID" />
                         <externalMetadataColumn
                           refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Daily_Rank]"
-                          codePage="1258"
-                          dataType="str"
-                          length="50"
+                          dataType="i4"
                           name="Daily_Rank" />
                         <externalMetadataColumn
                           refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Daily_Movement]"
-                          codePage="1258"
-                          dataType="str"
-                          length="50"
+                          dataType="i4"
                           name="Daily_Movement" />
                         <externalMetadataColumn
                           refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Weekly_Movement]"
-                          codePage="1258"
-                          dataType="str"
-                          length="50"
+                          dataType="i4"
                           name="Weekly_Movement" />
                         <externalMetadataColumn
                           refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Snapshot_Date_ID]"
@@ -13918,13 +14676,13 @@ where [refTable].[countryCode] = ?</property>
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Song_ID]"
+                          refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[spotify_id]"
                           cachedCodepage="1258"
                           cachedDataType="str"
                           cachedLength="50"
-                          cachedName="Song_ID"
+                          cachedName="spotify_id"
                           externalMetadataColumnId="Package\Tao bang Fact\Bang Fact\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Song_ID]"
-                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Song_ID]" />
+                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[spotify_id]" />
                         <inputColumn
                           refId="Package\Tao bang Fact\Bang Fact\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[countryCode]"
                           cachedCodepage="1258"
@@ -14925,12 +15683,12 @@ where [refTable].[Song_ID] = ?</property>
                     <property
                       dataType="System.String"
                       description="Indicates whether to reference metadata in an XML format."
-                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Song_ID" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="Song_Name" dataType="DT_WSTR" length="500" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Duration" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="tempo" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="valence" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="acousticness" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="danceability" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="Album_ID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Song_ID" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="Song_Name" dataType="DT_WSTR" length="500" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Duration" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="Tempo" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="Valence" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="Acousticness" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="Danceability" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1258"/&gt;&lt;referenceColumn name="Album_ID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Song_ID]};</property>
+                      name="ParameterMap">#{Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[spotify_id]};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -14954,12 +15712,12 @@ where [refTable].[Song_ID] = ?</property>
                       name="Lookup Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Tao bang Fact\Bang Fact\song.Inputs[Lookup Input].Columns[Song_ID]"
+                          refId="Package\Tao bang Fact\Bang Fact\song.Inputs[Lookup Input].Columns[spotify_id]"
                           cachedCodepage="1258"
                           cachedDataType="str"
                           cachedLength="50"
-                          cachedName="Song_ID"
-                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[Song_ID]">
+                          cachedName="spotify_id"
+                          lineageId="Package\Tao bang Fact\Bang Fact\Aggregate.Outputs[Aggregate Output 1].Columns[spotify_id]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -15061,7 +15819,6 @@ where [refTable].[Song_ID] = ?</property>
           DTS:refId="Package\Tao bang Fact\Rang buoc khoa ngoai Fact"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:Disabled="True"
           DTS:DTSID="{5FCFB662-8541-4BFE-B5FA-5D3F6188D79F}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
@@ -15101,7 +15858,7 @@ where [refTable].[Song_ID] = ?</property>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{F6868F02-BAE2-4261-8C4B-1DDDFE424CAC}"
-          SQLTask:SqlStatementSource="DELETE FROM Fact;&#xA;Go&#xA;&#xA;DELETE FROM Dim_SnapshotDate;&#xA;Go&#xA;&#xA;DELETE FROM Dim_Song;&#xA;Go&#xA;&#xA;DELETE FROM Dim_Artist;&#xA;Go&#xA;&#xA;DELETE FROM Dim_Album;&#xA;Go&#xA;&#xA;DELETE FROM Dim_Country;&#xA;Go" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="DELETE FROM Fact;&#xA;Go&#xA;&#xA;DELETE FROM Dim_SnapshotDate;&#xA;Go&#xA;&#xA;DELETE FROM Dim_Song;&#xA;Go&#xA;&#xA;DELETE FROM Dim_Album;&#xA;Go&#xA;&#xA;DELETE FROM Dim_Country;&#xA;Go" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -15113,7 +15870,7 @@ where [refTable].[Song_ID] = ?</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Xoa du lieu OriginalData"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -15131,7 +15888,7 @@ where [refTable].[Song_ID] = ?</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Xoa khoa ngoai Dim &amp; Fact"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -15211,27 +15968,27 @@ where [refTable].[Song_ID] = ?</property>
           Id="Package\Quá trình tạo bảng Dimension\Dim_SnapshotDate"
           TopLeft="306.89997365865,141.176468437323" />
         <NodeLayout
-          Size="127.2,41.6"
+          Size="126.4,41.6"
           Id="Package\Quá trình tạo bảng Dimension\Dim_Song"
           TopLeft="71.780941764805,144.031370011113" />
         <NodeLayout
-          Size="233.6,41.6"
+          Size="234.4,41.6"
           Id="Package\Quá trình tạo bảng Dimension\Rang buoc khoa ngoai Dim_Song"
           TopLeft="12.7333219292149,231.396076532282" />
         <EdgeLayout
           Id="Package\Quá trình tạo bảng Dimension.PrecedenceConstraints[Constraint 1]"
-          TopLeft="135.152366217634,111.556861056906">
+          TopLeft="134.952366217634,111.556861056906">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,32.4745089542064"
+              EndConnector="0,32.4745089542067"
               Start="0,0"
-              End="0,24.9745089542064">
+              End="0,24.9745089542067">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.9745089542064" />
+                    End="0,24.9745089542067" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15246,14 +16003,14 @@ where [refTable].[Song_ID] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.7647065211692"
+              EndConnector="0,45.764706521169"
               Start="0,0"
-              End="0,38.2647065211692">
+              End="0,38.264706521169">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.2647065211692" />
+                    End="0,38.264706521169" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15463,7 +16220,7 @@ where [refTable].[Song_ID] = ?</property>
         <NodeLayout
           Size="179.2,41.6"
           Id="Package\Làm sạch dữ liệu\OLE DB Destination 1"
-          TopLeft="599.285715561437,168.235293970182" />
+          TopLeft="690.00000146883,160.588235153355" />
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Làm sạch dữ liệu\Flat File Source"
@@ -15475,56 +16232,68 @@ where [refTable].[Song_ID] = ?</property>
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Làm sạch dữ liệu\OLE DB Destination"
-          TopLeft="327.857143555065,321.941176188394" />
+          TopLeft="577.142858371443,334.941176176999" />
         <NodeLayout
           Size="154.4,41.6"
           Id="Package\Làm sạch dữ liệu\Conditional Split"
-          TopLeft="332.857143565708,164.776470466242" />
+          TopLeft="451.428572389544,160.188235176146" />
         <EdgeLayout
           Id="Package\Làm sạch dữ liệu.Paths[NOTNULL]"
-          TopLeft="411.557143560387,206.376470466242">
+          TopLeft="528.628572389544,201.788235176146">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,115.564705722153"
+              EndConnector="133.714285981899,133.152941000853"
               Start="0,0"
-              End="0,108.064705722153">
+              End="133.714285981899,125.652941000853">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,108.064705722153" />
+                    End="0,62.5764705004265" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,62.5764705004265"
+                    Point2="0,66.5764705004265"
+                    Point3="4,66.5764705004265" />
+                  <mssgle:LineSegment
+                    End="129.714285981899,66.5764705004265" />
+                  <mssgle:CubicBezierSegment
+                    Point1="129.714285981899,66.5764705004265"
+                    Point2="133.714285981899,66.5764705004265"
+                    Point3="133.714285981899,70.5764705004265" />
+                  <mssgle:LineSegment
+                    End="133.714285981899,125.652941000853" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-22.00693359375,49.2457317673263,44.0138671875,9.5732421875"
+              BoundingBox="44.8502093971995,71.5764705004265,44.0138671875,9.5732421875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Làm sạch dữ liệu.Paths[ISNULL]"
-          TopLeft="487.257143565708,187.305882218212">
+          TopLeft="605.828572389544,181.188235164751">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="112.028571995728,0"
+              EndConnector="84.1714290792858,0"
               Start="0,0"
-              End="104.528571995728,0">
+              End="76.6714290792858,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="104.528571995728,0" />
+                    End="76.6714290792858,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="35.2607508416141,5,34.0070703125,9.5537109375"
+              BoundingBox="21.3321793833929,5,34.0070703125,9.5537109375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -15547,33 +16316,29 @@ where [refTable].[Song_ID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Làm sạch dữ liệu.Paths[Derived Column Output]"
-          TopLeft="262.800000234161,184.047058702876">
+          TopLeft="262.800000234161,181.752941057829">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="70.0571433315472,0"
+              EndConnector="188.628572155383,0"
               Start="0,0"
-              End="62.5571433315472,0">
+              End="181.128572155383,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="62.5571433315472,0" />
+                    End="181.128572155383,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -15969,7 +16734,7 @@ where [refTable].[Song_ID] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="16.4054678037762,22.949998934567,36.2890625,9.421875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16005,7 +16770,7 @@ where [refTable].[Song_ID] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="4.97642516285184,39.6999991729856,61.4471484375,11.228515625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16041,7 +16806,7 @@ where [refTable].[Song_ID] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="3.15861344516237,29.4500000372527,96.3827734375,11.609375"
+              BoundingBox="-19.4567381173377,29.4500000372527,141.6134765625,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16077,7 +16842,7 @@ where [refTable].[Song_ID] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="40.905468250811,19.9499999552965,36.2890625,9.421875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16137,7 +16902,7 @@ where [refTable].[Song_ID] = ?</property>
     design-time-name="Package\Quá trình tạo bảng Dimension\Dim_SnapshotDate">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\Quá trình tạo bảng Dimension\Dim_SnapshotDate\Derived Column"
@@ -16149,7 +16914,7 @@ where [refTable].[Song_ID] = ?</property>
         <NodeLayout
           Size="97.6,41.6"
           Id="Package\Quá trình tạo bảng Dimension\Dim_SnapshotDate\Sort"
-          TopLeft="311.999995350838,259.999996125698" />
+          TopLeft="305.999995440245,251.999996244907" />
         <NodeLayout
           Size="152,41.6"
           Id="Package\Quá trình tạo bảng Dimension\Dim_SnapshotDate\OLE DB Source"
@@ -16161,77 +16926,73 @@ where [refTable].[Song_ID] = ?</property>
         <NodeLayout
           Size="156,41.6"
           Id="Package\Quá trình tạo bảng Dimension\Dim_SnapshotDate\Data Conversion"
-          TopLeft="446.999993339181,332.999995037913" />
+          TopLeft="383.999994277954,323.999995172023" />
         <EdgeLayout
           Id="Package\Quá trình tạo bảng Dimension\Dim_SnapshotDate.Paths[Aggregate Output 1]"
           TopLeft="219.199997675419,225.599997258186">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="141.599997675419,34.3999988675118"
+              EndConnector="135.599997764826,26.3999989867213"
               Start="0,0"
-              End="141.599997675419,26.8999988675118">
+              End="135.599997764826,18.8999989867213">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,13.1999994337559" />
+                    End="0,9.19999949336064" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,13.1999994337559"
-                    Point2="0,17.1999994337559"
-                    Point3="4,17.1999994337559" />
+                    Point1="0,9.19999949336064"
+                    Point2="0,13.1999994933606"
+                    Point3="4,13.1999994933606" />
                   <mssgle:LineSegment
-                    End="137.599997675419,17.1999994337559" />
+                    End="131.599997764826,13.1999994933606" />
                   <mssgle:CubicBezierSegment
-                    Point1="137.599997675419,17.1999994337559"
-                    Point2="141.599997675419,17.1999994337559"
-                    Point3="141.599997675419,21.1999994337559" />
+                    Point1="131.599997764826,13.1999994933606"
+                    Point2="135.599997764826,13.1999994933606"
+                    Point3="135.599997764826,17.1999994933606" />
                   <mssgle:LineSegment
-                    End="141.599997675419,26.8999988675118" />
+                    End="135.599997764826,18.8999989867213" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Quá trình tạo bảng Dimension\Dim_SnapshotDate.Paths[Sort Output]"
-          TopLeft="360.799995350838,301.599996125698">
+          TopLeft="354.799995440245,293.599996244907">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="164.199997988343,31.3999989122153"
+              EndConnector="107.199998837709,30.3999989271161"
               Start="0,0"
-              End="164.199997988343,23.8999989122153">
+              End="107.199998837709,22.8999989271161">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.6999994561076" />
+                    End="0,11.1999994635581" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,11.6999994561076"
-                    Point2="0,15.6999994561076"
-                    Point3="4,15.6999994561076" />
+                    Point1="0,11.1999994635581"
+                    Point2="0,15.1999994635581"
+                    Point3="4,15.1999994635581" />
                   <mssgle:LineSegment
-                    End="160.199997988343,15.6999994561076" />
+                    End="103.199998837709,15.1999994635581" />
                   <mssgle:CubicBezierSegment
-                    Point1="160.199997988343,15.6999994561076"
-                    Point2="164.199997988343,15.6999994561076"
-                    Point3="164.199997988343,19.6999994561076" />
+                    Point1="103.199998837709,15.1999994635581"
+                    Point2="107.199998837709,15.1999994635581"
+                    Point3="107.199998837709,19.1999994635581" />
                   <mssgle:LineSegment
-                    End="164.199997988343,23.8999989122153" />
+                    End="107.199998837709,22.8999989271161" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16265,9 +17026,7 @@ where [refTable].[Song_ID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16301,45 +17060,41 @@ where [refTable].[Song_ID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Quá trình tạo bảng Dimension\Dim_SnapshotDate.Paths[Data Conversion Output]"
-          TopLeft="524.999993339181,374.599995037913">
+          TopLeft="461.999994277954,365.599995172023">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="65.3999990016222,44.3999987185001"
+              EndConnector="128.399998062849,53.3999985843896"
               Start="0,0"
-              End="65.3999990016222,36.8999987185001">
+              End="128.399998062849,45.8999985843896">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.1999993592501" />
+                    End="0,22.6999992921948" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.1999993592501"
-                    Point2="0,22.1999993592501"
-                    Point3="4,22.1999993592501" />
+                    Point1="0,22.6999992921948"
+                    Point2="0,26.6999992921948"
+                    Point3="4,26.6999992921948" />
                   <mssgle:LineSegment
-                    End="61.3999990016222,22.1999993592501" />
+                    End="124.399998062849,26.6999992921948" />
                   <mssgle:CubicBezierSegment
-                    Point1="61.3999990016222,22.1999993592501"
-                    Point2="65.3999990016222,22.1999993592501"
-                    Point3="65.3999990016222,26.1999993592501" />
+                    Point1="124.399998062849,26.6999992921948"
+                    Point2="128.399998062849,26.6999992921948"
+                    Point3="128.399998062849,30.6999992921948" />
                   <mssgle:LineSegment
-                    End="65.3999990016222,36.8999987185001" />
+                    End="128.399998062849,45.8999985843896" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -16381,162 +17136,228 @@ where [refTable].[Song_ID] = ?</property>
           Id="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Source"
           TopLeft="72.9999989122152,63.9999990463257" />
         <NodeLayout
-          Size="106.4,41.6"
+          Size="107.2,41.6"
           Id="Package\Quá trình tạo bảng Dimension\Dim_Song\album"
-          TopLeft="358.999994650483,307.999995410442" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort"
-          TopLeft="235.999996483326,228.999996587634" />
+          TopLeft="552.999991759658,347.999994814396" />
         <NodeLayout
           Size="126.4,41.6"
           Id="Package\Quá trình tạo bảng Dimension\Dim_Song\Aggregate"
-          TopLeft="134.999997988343,149.999997764826" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination"
-          TopLeft="430.9999935776,391.999994158745" />
-        <EdgeLayout
-          Id="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Sort Output]"
-          TopLeft="284.799996483326,270.599996587634">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="127.399998167157,37.3999988228078"
-              Start="0,0"
-              End="127.399998167157,29.8999988228078">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.6999994114039" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.6999994114039"
-                    Point2="0,18.6999994114039"
-                    Point3="4,18.6999994114039" />
-                  <mssgle:LineSegment
-                    End="123.399998167157,18.6999994114039" />
-                  <mssgle:CubicBezierSegment
-                    Point1="123.399998167157,18.6999994114039"
-                    Point2="127.399998167157,18.6999994114039"
-                    Point3="127.399998167157,22.6999994114039" />
-                  <mssgle:LineSegment
-                    End="127.399998167157,29.8999988228078" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="174.999997392297,154.99999769032" />
         <EdgeLayout
           Id="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[OLE DB Source Output]"
           TopLeft="148.999998912215,105.599999046326">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="49.1999990761281,44.3999987185001"
+              EndConnector="89.1999984800813,49.3999986439945"
               Start="0,0"
-              End="49.1999990761281,36.8999987185001">
+              End="89.1999984800813,41.8999986439945">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.19999935925" />
+                    End="0,20.6999993219972" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.19999935925"
-                    Point2="0,22.19999935925"
-                    Point3="4,22.19999935925" />
+                    Point1="0,20.6999993219972"
+                    Point2="0,24.6999993219972"
+                    Point3="4,24.6999993219972" />
                   <mssgle:LineSegment
-                    End="45.1999990761281,22.19999935925" />
+                    End="85.1999984800813,24.6999993219972" />
                   <mssgle:CubicBezierSegment
-                    Point1="45.1999990761281,22.19999935925"
-                    Point2="49.1999990761281,22.19999935925"
-                    Point3="49.1999990761281,26.19999935925" />
+                    Point1="85.1999984800813,24.6999993219972"
+                    Point2="89.1999984800813,24.6999993219972"
+                    Point3="89.1999984800813,28.6999993219972" />
                   <mssgle:LineSegment
-                    End="49.1999990761281,36.8999987185001" />
+                    End="89.1999984800813,41.8999986439945" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Lookup Match Output]"
-          TopLeft="412.199994650483,349.599995410442">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="103.999998927117,42.3999987483028"
-              Start="0,0"
-              End="103.999998927117,34.8999987483028">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.1999993741514" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.1999993741514"
-                    Point2="0,21.1999993741514"
-                    Point3="4,21.1999993741514" />
-                  <mssgle:LineSegment
-                    End="99.9999989271167,21.1999993741514" />
-                  <mssgle:CubicBezierSegment
-                    Point1="99.9999989271167,21.1999993741514"
-                    Point2="103.999998927117,21.1999993741514"
-                    Point3="103.999998927117,25.1999993741514" />
-                  <mssgle:LineSegment
-                    End="103.999998927117,34.8999987483028" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="3.80861274480834,26.1999993741514,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Quá trình tạo bảng Dimension\Dim_Song\Data Conversion"
+          TopLeft="249.99999627471,214.99999679625" />
         <EdgeLayout
           Id="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Aggregate Output 1]"
-          TopLeft="198.199997988343,191.599997764826">
+          TopLeft="301.399997392297,175.79999769032">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="86.5999984949826,37.3999988228084"
+              EndConnector="26.1999988824127,39.1999991059304"
               Start="0,0"
-              End="86.5999984949826,29.8999988228084">
+              End="26.1999988824127,31.6999991059304">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.6999994114042" />
+                    End="22.1999988824127,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.6999994114042"
-                    Point2="0,18.6999994114042"
-                    Point3="4,18.6999994114042" />
+                    Point1="22.1999988824127,0"
+                    Point2="26.1999988824127,0"
+                    Point3="26.1999988824127,4" />
                   <mssgle:LineSegment
-                    End="82.5999984949826,18.6999994114042" />
+                    End="26.1999988824127,31.6999991059304" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Quá trình tạo bảng Dimension\Dim_Song\Sort"
+          TopLeft="453.999993234873,275.99999588728" />
+        <EdgeLayout
+          Id="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Data Conversion Output]"
+          TopLeft="405.19999627471,235.79999679625">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48.7999969601631,60.9999990910291"
+              Start="0,0"
+              End="41.2999969601631,60.9999990910291">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="20.3999984800816,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="82.5999984949826,18.6999994114042"
-                    Point2="86.5999984949826,18.6999994114042"
-                    Point3="86.5999984949826,22.6999994114042" />
+                    Point1="20.3999984800816,0"
+                    Point2="24.3999984800816,0"
+                    Point3="24.3999984800816,4" />
                   <mssgle:LineSegment
-                    End="86.5999984949826,29.8999988228084" />
+                    End="24.3999984800816,56.9999990910291" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.3999984800816,56.9999990910291"
+                    Point2="24.3999984800816,60.9999990910291"
+                    Point3="28.3999984800816,60.9999990910291" />
+                  <mssgle:LineSegment
+                    End="41.2999969601631,60.9999990910291" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Sort Output]"
+          TopLeft="502.799993234873,317.59999588728">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="103.799998524785,30.3999989271164"
+              Start="0,0"
+              End="103.799998524785,22.8999989271164">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.1999994635582" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.1999994635582"
+                    Point2="0,15.1999994635582"
+                    Point3="4,15.1999994635582" />
+                  <mssgle:LineSegment
+                    End="99.7999985247848,15.1999994635582" />
+                  <mssgle:CubicBezierSegment
+                    Point1="99.7999985247848,15.1999994635582"
+                    Point2="103.799998524785,15.1999994635582"
+                    Point3="103.799998524785,19.1999994635582" />
+                  <mssgle:LineSegment
+                    End="103.799998524785,22.8999989271164" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1"
+          TopLeft="693.999989658594,435.999993503094" />
+        <EdgeLayout
+          Id="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Lookup Match Output]"
+          TopLeft="606.599991759658,389.599994814396">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="176.999997898937,46.399998688698"
+              Start="0,0"
+              End="176.999997898937,38.899998688698">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.199999344349" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.199999344349"
+                    Point2="0,23.199999344349"
+                    Point3="4,23.199999344349" />
+                  <mssgle:LineSegment
+                    End="172.999997898937,23.199999344349" />
+                  <mssgle:CubicBezierSegment
+                    Point1="172.999997898937,23.199999344349"
+                    Point2="176.999997898937,23.199999344349"
+                    Point3="176.999997898937,27.199999344349" />
+                  <mssgle:LineSegment
+                    End="176.999997898937,38.899998688698" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="40.3086122307183,28.199999344349,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination"
+          TopLeft="386.999994233251,128.99999807775" />
+        <EdgeLayout
+          Id="Package\Quá trình tạo bảng Dimension\Dim_Song.Paths[Data Conversion Error Output]"
+          TopLeft="352.133329608043,214.99999679625">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="120.066664625208,-44.3999987185002"
+              Start="0,0"
+              End="120.066664625208,-36.8999987185002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-14.031836214248" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-14.031836214248"
+                    Point2="0,-18.031836214248"
+                    Point3="4,-18.031836214248" />
+                  <mssgle:LineSegment
+                    End="116.066664625208,-18.031836214248" />
+                  <mssgle:CubicBezierSegment
+                    Point1="116.066664625208,-18.031836214248"
+                    Point2="120.066664625208,-18.031836214248"
+                    Point3="120.066664625208,-22.031836214248" />
+                  <mssgle:LineSegment
+                    End="120.066664625208,-36.8999987185002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-6.05305440614612,-13.031836214248,132.1727734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16562,7 +17383,7 @@ where [refTable].[Song_ID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -16572,23 +17393,10 @@ where [refTable].[Song_ID] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -16598,25 +17406,29 @@ where [refTable].[Song_ID] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="100.8,41.6"
+          Id="Package\Tao bang Fact\Bang Fact\song"
+          TopLeft="661.244887462901,486.739488667903" />
+        <NodeLayout
           Size="112.8,41.6"
           Id="Package\Tao bang Fact\Bang Fact\country"
           TopLeft="438.99999345839,329.999995082617" />
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\Tao bang Fact\Bang Fact\OLE DB Destination"
-          TopLeft="787.999988257885,576.799991595745" />
+          TopLeft="715.551008511823,574.61511764808" />
         <NodeLayout
-          Size="100.8,41.6"
-          Id="Package\Tao bang Fact\Bang Fact\song"
-          TopLeft="698.999989584088,477.999992877244" />
+          Size="140.8,41.6"
+          Id="Package\Tao bang Fact\Bang Fact\snapshotdate"
+          TopLeft="526.142848572865,401.445372077332" />
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\Tao bang Fact\Bang Fact\OLE DB Destination 1"
+          TopLeft="573.999991446734,232.399996930361" />
         <NodeLayout
           Size="152,41.6"
           Id="Package\Tao bang Fact\Bang Fact\OLE DB Source"
           TopLeft="65.9999990165234,65.9999990165234" />
-        <NodeLayout
-          Size="140.8,41.6"
-          Id="Package\Tao bang Fact\Bang Fact\snapshotdate"
-          TopLeft="568.999991521239,407.999993920326" />
         <NodeLayout
           Size="156,41.6"
           Id="Package\Tao bang Fact\Bang Fact\Data Conversion"
@@ -16631,26 +17443,26 @@ where [refTable].[Song_ID] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="102.199998286367,41.7999991506338"
+              EndConnector="102.199998286367,41.7999991506336"
               Start="0,0"
-              End="102.199998286367,34.2999991506338">
+              End="102.199998286367,34.2999991506336">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.8999995753169" />
+                    End="0,16.8999995753168" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,16.8999995753169"
-                    Point2="0,20.8999995753169"
-                    Point3="4,20.8999995753169" />
+                    Point1="0,16.8999995753168"
+                    Point2="0,20.8999995753168"
+                    Point3="4,20.8999995753168" />
                   <mssgle:LineSegment
-                    End="98.1999982863666,20.8999995753169" />
+                    End="98.1999982863666,20.8999995753168" />
                   <mssgle:CubicBezierSegment
-                    Point1="98.1999982863666,20.8999995753169"
-                    Point2="102.199998286367,20.8999995753169"
-                    Point3="102.199998286367,24.8999995753169" />
+                    Point1="98.1999982863666,20.8999995753168"
+                    Point2="102.199998286367,20.8999995753168"
+                    Point3="102.199998286367,24.8999995753168" />
                   <mssgle:LineSegment
-                    End="102.199998286367,34.2999991506338" />
+                    End="102.199998286367,34.2999991506336" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16661,73 +17473,73 @@ where [refTable].[Song_ID] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Tao bang Fact\Bang Fact.Paths[Lookup Match Output2]"
-          TopLeft="749.399989584088,519.599992877244">
+          TopLeft="711.644887462901,528.339488667903">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="124.199998673797,57.1999987185006"
+              EndConnector="89.5061210489223,46.2756289801774"
               Start="0,0"
-              End="124.199998673797,49.6999987185006">
+              End="89.5061210489223,38.7756289801774">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.5999993592503" />
+                    End="0,19.1378144900887" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.5999993592503"
-                    Point2="0,28.5999993592503"
-                    Point3="4,28.5999993592503" />
+                    Point1="0,19.1378144900887"
+                    Point2="0,23.1378144900887"
+                    Point3="4,23.1378144900887" />
                   <mssgle:LineSegment
-                    End="120.199998673797,28.5999993592503" />
+                    End="85.5061210489223,23.1378144900887" />
                   <mssgle:CubicBezierSegment
-                    Point1="120.199998673797,28.5999993592503"
-                    Point2="124.199998673797,28.5999993592503"
-                    Point3="124.199998673797,32.5999993592503" />
+                    Point1="85.5061210489223,23.1378144900887"
+                    Point2="89.5061210489223,23.1378144900887"
+                    Point3="89.5061210489223,27.1378144900887" />
                   <mssgle:LineSegment
-                    End="124.199998673797,49.6999987185006" />
+                    End="89.5061210489223,38.7756289801774" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="13.9086126181485,33.5999993592503,96.3827734375,11.609375"
+              BoundingBox="-3.43832619428886,28.1378144900887,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Tao bang Fact\Bang Fact.Paths[Lookup Match Output1]"
-          TopLeft="639.399991521239,449.599993920326">
+          TopLeft="596.542848572865,443.045372077332">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="109.999998062849,28.3999989569182"
+              EndConnector="115.102038890036,43.6941165905711"
               Start="0,0"
-              End="109.999998062849,20.8999989569182">
+              End="115.102038890036,36.1941165905711">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10.1999994784591" />
+                    End="0,17.8470582952855" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,10.1999994784591"
-                    Point2="0,14.1999994784591"
-                    Point3="4,14.1999994784591" />
+                    Point1="0,17.8470582952855"
+                    Point2="0,21.8470582952855"
+                    Point3="4,21.8470582952855" />
                   <mssgle:LineSegment
-                    End="105.999998062849,14.1999994784591" />
+                    End="111.102038890036,21.8470582952855" />
                   <mssgle:CubicBezierSegment
-                    Point1="105.999998062849,14.1999994784591"
-                    Point2="109.999998062849,14.1999994784591"
-                    Point3="109.999998062849,18.1999994784591" />
+                    Point1="111.102038890036,21.8470582952855"
+                    Point2="115.102038890036,21.8470582952855"
+                    Point3="115.102038890036,25.8470582952855" />
                   <mssgle:LineSegment
-                    End="109.999998062849,20.8999989569182" />
+                    End="115.102038890036,36.1941165905711" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="6.8086123126745,19.1999994784591,96.3827734375,11.609375"
+              BoundingBox="9.359632726268,26.8470582952855,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16737,33 +17549,33 @@ where [refTable].[Song_ID] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="143.999998062849,36.3999988377092"
+              EndConnector="101.142855114475,29.8453769947149"
               Start="0,0"
-              End="143.999998062849,28.8999988377092">
+              End="101.142855114475,22.3453769947149">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.1999994188546" />
+                    End="0,10.9226884973574" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.1999994188546"
-                    Point2="0,18.1999994188546"
-                    Point3="4,18.1999994188546" />
+                    Point1="0,10.9226884973574"
+                    Point2="0,14.9226884973574"
+                    Point3="4,14.9226884973574" />
                   <mssgle:LineSegment
-                    End="139.999998062849,18.1999994188546" />
+                    End="97.1428551144746,14.9226884973574" />
                   <mssgle:CubicBezierSegment
-                    Point1="139.999998062849,18.1999994188546"
-                    Point2="143.999998062849,18.1999994188546"
-                    Point3="143.999998062849,22.1999994188546" />
+                    Point1="97.1428551144746,14.9226884973574"
+                    Point2="101.142855114475,14.9226884973574"
+                    Point3="101.142855114475,18.9226884973574" />
                   <mssgle:LineSegment
-                    End="143.999998062849,28.8999988377092" />
+                    End="101.142855114475,22.3453769947149" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="23.8086123126745,23.1999994188546,96.3827734375,11.609375"
+              BoundingBox="2.3800408384873,19.9226884973574,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16802,44 +17614,6 @@ where [refTable].[Song_ID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Tao bang Fact\Bang Fact.Paths[Aggregate Output 1]"
-          TopLeft="244.19999730289,190.999998167157">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="135.79999819696,46.9999982863669"
-              Start="0,0"
-              End="135.79999819696,39.4999982863669">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.4999991431835" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.4999991431835"
-                    Point2="0,23.4999991431835"
-                    Point3="4,23.4999991431835" />
-                  <mssgle:LineSegment
-                    End="131.79999819696,23.4999991431835" />
-                  <mssgle:CubicBezierSegment
-                    Point1="131.79999819696,23.4999991431835"
-                    Point2="135.79999819696,23.4999991431835"
-                    Point3="135.79999819696,27.4999991431835" />
-                  <mssgle:LineSegment
-                    End="135.79999819696,39.4999982863669" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="179.2,41.6"
-          Id="Package\Tao bang Fact\Bang Fact\OLE DB Destination 1"
-          TopLeft="573.999991446734,232.399996930361" />
-        <EdgeLayout
           Id="Package\Tao bang Fact\Bang Fact.Paths[Data Conversion Error Output]"
           TopLeft="457.99999549985,255.999996691942">
           <EdgeLayout.Curve>
@@ -16859,13 +17633,70 @@ where [refTable].[Song_ID] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-11.8363887453081,5,132.1727734375,11.43359375"
+              BoundingBox="-11.836388745308,5,132.1727734375,11.43359375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tao bang Fact\Bang Fact.Paths[Aggregate Output 1]"
+          TopLeft="244.19999730289,190.999998167157">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="135.79999819696,46.999998286367"
+              Start="0,0"
+              End="135.79999819696,39.499998286367">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.4999991431835" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.4999991431835"
+                    Point2="0,23.4999991431835"
+                    Point3="4,23.4999991431835" />
+                  <mssgle:LineSegment
+                    End="131.79999819696,23.4999991431835" />
+                  <mssgle:CubicBezierSegment
+                    Point1="131.79999819696,23.4999991431835"
+                    Point2="135.79999819696,23.4999991431835"
+                    Point3="135.79999819696,27.4999991431835" />
+                  <mssgle:LineSegment
+                    End="135.79999819696,39.499998286367" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tao bang Fact\Bang Fact\song">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Dim_Song]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Tao bang Fact\Bang Fact\country">
     <Properties>
@@ -16903,42 +17734,6 @@ where [refTable].[Song_ID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tao bang Fact\Bang Fact\song">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Song]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tao bang Fact\Bang Fact\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Tao bang Fact\Bang Fact\snapshotdate">
     <Properties>
       <Property>
@@ -16963,6 +17758,45 @@ where [refTable].[Song_ID] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Tao bang Fact\Bang Fact\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tao bang Fact\Bang Fact\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Quá trình tạo bảng Dimension\Dim_Song\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
